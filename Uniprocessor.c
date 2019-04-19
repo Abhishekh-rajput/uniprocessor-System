@@ -18,6 +18,14 @@ int main()
  	printf("\nP%d details : ", i);
  	scanf("%d%d",&arrival[i],&burst[i]);
  }
+ for(i=0;i<n;i++)
+ x[i]=burst[i];
+
+ //burst[9]=4546545;
+ int t=74343434;
+ 
+
+ 
   
 
     return 0;
