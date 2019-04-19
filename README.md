@@ -24,7 +24,7 @@ gcc uniprocessor.c -o uniprocessor.out
 
 ##### ScreenShot
 ![](https://i.imgur.com/soB1FI9.png)
-Enter the value as the input and yoy will get the desired out as asked in the question
+provide all the asked input and you will have your answer.
 
 
 
