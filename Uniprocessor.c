@@ -11,6 +11,13 @@ int main()
    int *burst=(int *)calloc(n,sizeof(int));
     int *x=(int *)calloc(n,sizeof(int));
      int *y=(int *)calloc(n,sizeof(int));
+  printf("enter the no of processes arrival_time burst_time in respective order");
+
+ for(i=0;i<n;i++)
+ {
+ 	printf("\nP%d details : ", i);
+ 	scanf("%d%d",&arrival[i],&burst[i]);
+ }
   
 
     return 0;
