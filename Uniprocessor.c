@@ -31,10 +31,24 @@ int main()
    if(arrival[i]<=time && burst[i]<t && burst[i]>0 )
    shortest=i;
   }
- 
+  burst[shortest]--;
+  if(burst[shortest]==0)
+  {
+   count++;
+   completion=time+1;
+   y[shortest]=completion;
+   wait=wait+completion-arrival[shortest]-x[shortest];
+   tt= tt+completion-arrival[shortest];
+  }
+ }
+ printf("processno\tarrivaltime\tbursttime\tcompletiontime\n ");
+ for(i=0;i<n;i++)
+ {
+ 	printf("%d\t\t%d\t\t%d\t\t%d\n",i,arrival[i],x[i],y[i]);
+ }
+ printf("\n\n\n");
+ printf("\n\nAverage waiting time = %lf\n",wait/n);
+    printf("Average Turnaround time = %lf",tt/n);
 
- 
-  
-
-    return 0;
+ return 0;
 }
