@@ -23,6 +23,14 @@ int main()
 
  //burst[9]=4546545;
  int t=74343434;
+ for(time=0;count!=n;time++)
+ {
+  //	shortest=9;
+  for(i=0;i<n;i++)
+  {
+   if(arrival[i]<=time && burst[i]<t && burst[i]>0 )
+   shortest=i;
+  }
  
 
  
