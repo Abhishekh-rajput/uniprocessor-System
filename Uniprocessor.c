@@ -11,7 +11,8 @@ int main()
    int *burst=(int *)calloc(n,sizeof(int));
     int *x=(int *)calloc(n,sizeof(int));
      int *y=(int *)calloc(n,sizeof(int));
-  printf("enter the no of processes arrival_time burst_time in respective order");
+  
+ printf("enter the no of processes arrival_time burst_time in respective order");
 
  for(i=0;i<n;i++)
  {
@@ -23,6 +24,7 @@ int main()
 
  //burst[9]=4546545;
  int t=74343434;
+  
  for(time=0;count!=n;time++)
  {
   //	shortest=9;
@@ -49,6 +51,5 @@ int main()
  printf("\n\n\n");
  printf("\n\nAverage waiting time = %lf\n",wait/n);
     printf("Average Turnaround time = %lf",tt/n);
-
- return 0;
+    return 0;
 }
